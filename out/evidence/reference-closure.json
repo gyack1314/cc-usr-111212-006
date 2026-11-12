@@ -1,0 +1,782 @@
+{
+  "A-读集不交叉先后成功": {
+    "r0": {
+      "release": "r0",
+      "parent": null,
+      "operation_id": "bootstrap",
+      "mapping": {
+        "devices": "dv1",
+        "inspections": "iv1",
+        "trades": "tv1"
+      },
+      "snapshots": {
+        "dv1": {
+          "digest": "b8faecbdb4f96f674b69504df642f3388519b8d26936da32460e1fce20cd5faf",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "788e00fe9b5203c7deecd4fbb4f0d556d690093f3ff17d42ff5186ce2da7f24f"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv1": {
+          "digest": "1d40a1952d66237257b8fe9b251c267048c52596461586baf7b3e8c620033f22",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb"
+            }
+          ]
+        }
+      }
+    },
+    "rel_4cfe43fb3bdefe8f": {
+      "release": "rel_4cfe43fb3bdefe8f",
+      "parent": "r0",
+      "operation_id": "c2",
+      "mapping": {
+        "devices": "dv1",
+        "inspections": "iv1",
+        "trades": "tv2"
+      },
+      "snapshots": {
+        "dv1": {
+          "digest": "b8faecbdb4f96f674b69504df642f3388519b8d26936da32460e1fce20cd5faf",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "788e00fe9b5203c7deecd4fbb4f0d556d690093f3ff17d42ff5186ce2da7f24f"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv2": {
+          "digest": "1f2620b73445f60e73eba49ce72f06e67b89bda13505f2271db8bb98c98fa2a1",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "8dd549d61f946cb333fd63c14913836d5a6a2614b5944d512a2008112ef30cde"
+            }
+          ]
+        }
+      }
+    },
+    "rel_760ef150171ecc38": {
+      "release": "rel_760ef150171ecc38",
+      "parent": "rel_4cfe43fb3bdefe8f",
+      "operation_id": "c1",
+      "mapping": {
+        "devices": "dv2",
+        "inspections": "iv1",
+        "trades": "tv2"
+      },
+      "snapshots": {
+        "dv2": {
+          "digest": "5a757a9c3ea4e892f94639cfd8e57649f4b46fc8d1bbd0709090a730736ca9e4",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "3942988430b4d175f3478b4d81cd9b5f15e57e9e2f9afd4849f2f09e758b1753"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv2": {
+          "digest": "1f2620b73445f60e73eba49ce72f06e67b89bda13505f2271db8bb98c98fa2a1",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "8dd549d61f946cb333fd63c14913836d5a6a2614b5944d512a2008112ef30cde"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "B-读依赖冲突被拒": {
+    "r0": {
+      "release": "r0",
+      "parent": null,
+      "operation_id": "bootstrap",
+      "mapping": {
+        "devices": "dv1",
+        "inspections": "iv1",
+        "trades": "tv1"
+      },
+      "snapshots": {
+        "dv1": {
+          "digest": "b8faecbdb4f96f674b69504df642f3388519b8d26936da32460e1fce20cd5faf",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "788e00fe9b5203c7deecd4fbb4f0d556d690093f3ff17d42ff5186ce2da7f24f"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv1": {
+          "digest": "1d40a1952d66237257b8fe9b251c267048c52596461586baf7b3e8c620033f22",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb"
+            }
+          ]
+        }
+      }
+    },
+    "rel_7e0bfffd22e30263": {
+      "release": "rel_7e0bfffd22e30263",
+      "parent": "r0",
+      "operation_id": "c1",
+      "mapping": {
+        "devices": "dv2",
+        "inspections": "iv1",
+        "trades": "tv1"
+      },
+      "snapshots": {
+        "dv2": {
+          "digest": "5a757a9c3ea4e892f94639cfd8e57649f4b46fc8d1bbd0709090a730736ca9e4",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "3942988430b4d175f3478b4d81cd9b5f15e57e9e2f9afd4849f2f09e758b1753"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv1": {
+          "digest": "1d40a1952d66237257b8fe9b251c267048c52596461586baf7b3e8c620033f22",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "C-验证后冲突与重基": {
+    "r0": {
+      "release": "r0",
+      "parent": null,
+      "operation_id": "bootstrap",
+      "mapping": {
+        "devices": "dv1",
+        "inspections": "iv1",
+        "trades": "tv1"
+      },
+      "snapshots": {
+        "dv1": {
+          "digest": "b8faecbdb4f96f674b69504df642f3388519b8d26936da32460e1fce20cd5faf",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "788e00fe9b5203c7deecd4fbb4f0d556d690093f3ff17d42ff5186ce2da7f24f"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv1": {
+          "digest": "1d40a1952d66237257b8fe9b251c267048c52596461586baf7b3e8c620033f22",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb"
+            }
+          ]
+        }
+      }
+    },
+    "rel_7e0bfffd22e30263": {
+      "release": "rel_7e0bfffd22e30263",
+      "parent": "r0",
+      "operation_id": "c1",
+      "mapping": {
+        "devices": "dv2",
+        "inspections": "iv1",
+        "trades": "tv1"
+      },
+      "snapshots": {
+        "dv2": {
+          "digest": "5a757a9c3ea4e892f94639cfd8e57649f4b46fc8d1bbd0709090a730736ca9e4",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "3942988430b4d175f3478b4d81cd9b5f15e57e9e2f9afd4849f2f09e758b1753"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv1": {
+          "digest": "1d40a1952d66237257b8fe9b251c267048c52596461586baf7b3e8c620033f22",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb"
+            }
+          ]
+        }
+      }
+    },
+    "rel_ab19723dfea4fce6": {
+      "release": "rel_ab19723dfea4fce6",
+      "parent": "rel_7e0bfffd22e30263",
+      "operation_id": "c2",
+      "mapping": {
+        "devices": "dv2",
+        "inspections": "iv1",
+        "trades": "tv2"
+      },
+      "snapshots": {
+        "dv2": {
+          "digest": "5a757a9c3ea4e892f94639cfd8e57649f4b46fc8d1bbd0709090a730736ca9e4",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "3942988430b4d175f3478b4d81cd9b5f15e57e9e2f9afd4849f2f09e758b1753"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv2": {
+          "digest": "1f2620b73445f60e73eba49ce72f06e67b89bda13505f2271db8bb98c98fa2a1",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "8dd549d61f946cb333fd63c14913836d5a6a2614b5944d512a2008112ef30cde"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "D-提交后失联重试": {
+    "r0": {
+      "release": "r0",
+      "parent": null,
+      "operation_id": "bootstrap",
+      "mapping": {
+        "devices": "dv1",
+        "inspections": "iv1",
+        "trades": "tv1"
+      },
+      "snapshots": {
+        "dv1": {
+          "digest": "b8faecbdb4f96f674b69504df642f3388519b8d26936da32460e1fce20cd5faf",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "788e00fe9b5203c7deecd4fbb4f0d556d690093f3ff17d42ff5186ce2da7f24f"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv1": {
+          "digest": "1d40a1952d66237257b8fe9b251c267048c52596461586baf7b3e8c620033f22",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb"
+            }
+          ]
+        }
+      }
+    },
+    "rel_7e0bfffd22e30263": {
+      "release": "rel_7e0bfffd22e30263",
+      "parent": "r0",
+      "operation_id": "c1",
+      "mapping": {
+        "devices": "dv2",
+        "inspections": "iv1",
+        "trades": "tv1"
+      },
+      "snapshots": {
+        "dv2": {
+          "digest": "5a757a9c3ea4e892f94639cfd8e57649f4b46fc8d1bbd0709090a730736ca9e4",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "3942988430b4d175f3478b4d81cd9b5f15e57e9e2f9afd4849f2f09e758b1753"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv1": {
+          "digest": "1d40a1952d66237257b8fe9b251c267048c52596461586baf7b3e8c620033f22",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb"
+            }
+          ]
+        }
+      }
+    },
+    "rel_e0e6299d34c1b38f": {
+      "release": "rel_e0e6299d34c1b38f",
+      "parent": "rel_7e0bfffd22e30263",
+      "operation_id": "c2",
+      "mapping": {
+        "devices": "dv2",
+        "inspections": "iv1",
+        "trades": "tv2"
+      },
+      "snapshots": {
+        "dv2": {
+          "digest": "5a757a9c3ea4e892f94639cfd8e57649f4b46fc8d1bbd0709090a730736ca9e4",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "3942988430b4d175f3478b4d81cd9b5f15e57e9e2f9afd4849f2f09e758b1753"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv2": {
+          "digest": "1f2620b73445f60e73eba49ce72f06e67b89bda13505f2271db8bb98c98fa2a1",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "8dd549d61f946cb333fd63c14913836d5a6a2614b5944d512a2008112ef30cde"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "E-读者只见完整一代": {
+    "r0": {
+      "release": "r0",
+      "parent": null,
+      "operation_id": "bootstrap",
+      "mapping": {
+        "devices": "dv1",
+        "inspections": "iv1",
+        "trades": "tv1"
+      },
+      "snapshots": {
+        "dv1": {
+          "digest": "b8faecbdb4f96f674b69504df642f3388519b8d26936da32460e1fce20cd5faf",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "788e00fe9b5203c7deecd4fbb4f0d556d690093f3ff17d42ff5186ce2da7f24f"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv1": {
+          "digest": "1d40a1952d66237257b8fe9b251c267048c52596461586baf7b3e8c620033f22",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb"
+            }
+          ]
+        }
+      }
+    },
+    "rel_7e0bfffd22e30263": {
+      "release": "rel_7e0bfffd22e30263",
+      "parent": "r0",
+      "operation_id": "c1",
+      "mapping": {
+        "devices": "dv2",
+        "inspections": "iv1",
+        "trades": "tv1"
+      },
+      "snapshots": {
+        "dv2": {
+          "digest": "5a757a9c3ea4e892f94639cfd8e57649f4b46fc8d1bbd0709090a730736ca9e4",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "3942988430b4d175f3478b4d81cd9b5f15e57e9e2f9afd4849f2f09e758b1753"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv1": {
+          "digest": "1d40a1952d66237257b8fe9b251c267048c52596461586baf7b3e8c620033f22",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb"
+            }
+          ]
+        }
+      }
+    },
+    "rel_e0e6299d34c1b38f": {
+      "release": "rel_e0e6299d34c1b38f",
+      "parent": "rel_7e0bfffd22e30263",
+      "operation_id": "c2",
+      "mapping": {
+        "devices": "dv2",
+        "inspections": "iv1",
+        "trades": "tv2"
+      },
+      "snapshots": {
+        "dv2": {
+          "digest": "5a757a9c3ea4e892f94639cfd8e57649f4b46fc8d1bbd0709090a730736ca9e4",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "3942988430b4d175f3478b4d81cd9b5f15e57e9e2f9afd4849f2f09e758b1753"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv2": {
+          "digest": "1f2620b73445f60e73eba49ce72f06e67b89bda13505f2271db8bb98c98fa2a1",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "8dd549d61f946cb333fd63c14913836d5a6a2614b5944d512a2008112ef30cde"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "F-中途失败不留痕于当前版本": {
+    "r0": {
+      "release": "r0",
+      "parent": null,
+      "operation_id": "bootstrap",
+      "mapping": {
+        "devices": "dv1",
+        "inspections": "iv1",
+        "trades": "tv1"
+      },
+      "snapshots": {
+        "dv1": {
+          "digest": "b8faecbdb4f96f674b69504df642f3388519b8d26936da32460e1fce20cd5faf",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "788e00fe9b5203c7deecd4fbb4f0d556d690093f3ff17d42ff5186ce2da7f24f"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv1": {
+          "digest": "1d40a1952d66237257b8fe9b251c267048c52596461586baf7b3e8c620033f22",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb"
+            }
+          ]
+        }
+      }
+    },
+    "rel_7e0bfffd22e30263": {
+      "release": "rel_7e0bfffd22e30263",
+      "parent": "r0",
+      "operation_id": "c1",
+      "mapping": {
+        "devices": "dv2",
+        "inspections": "iv1",
+        "trades": "tv1"
+      },
+      "snapshots": {
+        "dv2": {
+          "digest": "5a757a9c3ea4e892f94639cfd8e57649f4b46fc8d1bbd0709090a730736ca9e4",
+          "table": "devices",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 27,
+              "rows": 1,
+              "sha256": "3942988430b4d175f3478b4d81cd9b5f15e57e9e2f9afd4849f2f09e758b1753"
+            }
+          ]
+        },
+        "iv1": {
+          "digest": "32b31c4f183f33c5757baf890e53813cc21a684c28937c502891ad03e9a7de4c",
+          "table": "inspections",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 26,
+              "rows": 1,
+              "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de"
+            }
+          ]
+        },
+        "tv1": {
+          "digest": "1d40a1952d66237257b8fe9b251c267048c52596461586baf7b3e8c620033f22",
+          "table": "trades",
+          "rows": 1,
+          "files": [
+            {
+              "bytes": 25,
+              "rows": 1,
+              "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

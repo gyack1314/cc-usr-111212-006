@@ -1,0 +1,77 @@
+{"t_ms": 0.0, "thread": "producer-devices", "event": "stage_begin", "op": "c1"}
+{"t_ms": 0.243, "thread": "producer-trades", "event": "stage_begin", "op": "c2"}
+{"t_ms": 11.672, "thread": "producer-devices", "event": "validate_begin", "op": "c1"}
+{"t_ms": 12.456, "thread": "producer-trades", "event": "validate_begin", "op": "c2"}
+{"t_ms": 42.354, "thread": "hook", "event": "after_validation", "op": "c2"}
+{"t_ms": 53.612, "thread": "hook", "event": "after_validation", "op": "c1"}
+{"t_ms": 53.643, "thread": "producer-devices", "event": "validate_end", "op": "c1"}
+{"t_ms": 53.699, "thread": "producer-trades", "event": "validate_end", "op": "c2"}
+{"t_ms": 85.694, "thread": "producer-devices", "event": "staged_finalized", "op": "c1"}
+{"t_ms": 85.699, "thread": "producer-devices", "event": "commit_begin", "op": "c1"}
+{"t_ms": 91.755, "thread": "producer-trades", "event": "staged_finalized", "op": "c2"}
+{"t_ms": 91.761, "thread": "producer-trades", "event": "commit_begin", "op": "c2"}
+{"t_ms": 103.182, "thread": "hook", "event": "before_commit", "op": "c2"}
+{"t_ms": 111.766, "thread": "hook", "event": "after_commit_before_reply", "op": "c2"}
+{"t_ms": 111.772, "thread": "producer-trades", "event": "commit_end", "op": "c2", "release": "rel_4cfe43fb3bdefe8f", "replayed": false}
+{"t_ms": 133.953, "thread": "hook", "event": "before_commit", "op": "c1"}
+{"t_ms": 141.651, "thread": "hook", "event": "after_commit_before_reply", "op": "c1"}
+{"t_ms": 141.656, "thread": "producer-devices", "event": "commit_end", "op": "c1", "release": "rel_760ef150171ecc38", "replayed": false}
+{"t_ms": 388.083, "thread": "victim-c2", "event": "stage_begin", "op": "c2"}
+{"t_ms": 398.992, "thread": "victim-c2", "event": "validate_begin", "op": "c2"}
+{"t_ms": 453.701, "thread": "winner-c1", "event": "stage_begin", "op": "c1"}
+{"t_ms": 463.645, "thread": "winner-c1", "event": "validate_begin", "op": "c1"}
+{"t_ms": 523.452, "thread": "winner-c1", "event": "validate_end", "op": "c1"}
+{"t_ms": 550.731, "thread": "winner-c1", "event": "staged_finalized", "op": "c1"}
+{"t_ms": 550.735, "thread": "winner-c1", "event": "commit_begin", "op": "c1"}
+{"t_ms": 578.058, "thread": "winner-c1", "event": "commit_end", "op": "c1", "release": "rel_7e0bfffd22e30263", "replayed": false}
+{"t_ms": 578.123, "thread": "victim-c2", "event": "validate_end", "op": "c2"}
+{"t_ms": 612.74, "thread": "victim-c2", "event": "staged_finalized", "op": "c2"}
+{"t_ms": 612.745, "thread": "victim-c2", "event": "commit_begin", "op": "c2"}
+{"t_ms": 867.691, "thread": "victim-c2", "event": "stage_begin", "op": "c2"}
+{"t_ms": 877.381, "thread": "victim-c2", "event": "validate_begin", "op": "c2"}
+{"t_ms": 902.256, "thread": "winner-c1", "event": "stage_begin", "op": "c1"}
+{"t_ms": 912.633, "thread": "winner-c1", "event": "validate_begin", "op": "c1"}
+{"t_ms": 938.015, "thread": "winner-c1", "event": "validate_end", "op": "c1"}
+{"t_ms": 964.717, "thread": "winner-c1", "event": "staged_finalized", "op": "c1"}
+{"t_ms": 964.722, "thread": "winner-c1", "event": "commit_begin", "op": "c1"}
+{"t_ms": 991.877, "thread": "winner-c1", "event": "commit_end", "op": "c1", "release": "rel_7e0bfffd22e30263", "replayed": false}
+{"t_ms": 991.95, "thread": "victim-c2", "event": "validate_end", "op": "c2"}
+{"t_ms": 1026.546, "thread": "victim-c2", "event": "staged_finalized", "op": "c2"}
+{"t_ms": 1026.552, "thread": "victim-c2", "event": "commit_begin", "op": "c2"}
+{"t_ms": 1045.764, "thread": "victim-c2", "event": "stage_begin", "op": "c2"}
+{"t_ms": 1076.093, "thread": "victim-c2", "event": "validate_begin", "op": "c2"}
+{"t_ms": 1092.851, "thread": "victim-c2", "event": "validate_end", "op": "c2"}
+{"t_ms": 1105.007, "thread": "victim-c2", "event": "staged_finalized", "op": "c2"}
+{"t_ms": 1105.012, "thread": "victim-c2", "event": "commit_begin", "op": "c2"}
+{"t_ms": 1123.865, "thread": "victim-c2", "event": "commit_end", "op": "c2", "release": "rel_ab19723dfea4fce6", "replayed": false}
+{"t_ms": 1372.966, "thread": "producer-c1", "event": "stage_begin", "op": "c1"}
+{"t_ms": 1383.022, "thread": "producer-c1", "event": "validate_begin", "op": "c1"}
+{"t_ms": 1421.402, "thread": "producer-c1", "event": "validate_end", "op": "c1"}
+{"t_ms": 1445.654, "thread": "producer-c1", "event": "staged_finalized", "op": "c1"}
+{"t_ms": 1445.66, "thread": "producer-c1", "event": "commit_begin", "op": "c1"}
+{"t_ms": 1472.571, "thread": "hook", "event": "reply_lost", "op": "c1"}
+{"t_ms": 1503.967, "thread": "producer-c2", "event": "stage_begin", "op": "c2"}
+{"t_ms": 1516.456, "thread": "producer-c2", "event": "validate_begin", "op": "c2"}
+{"t_ms": 1536.695, "thread": "producer-c2", "event": "validate_end", "op": "c2"}
+{"t_ms": 1562.789, "thread": "producer-c2", "event": "staged_finalized", "op": "c2"}
+{"t_ms": 1562.793, "thread": "producer-c2", "event": "commit_begin", "op": "c2"}
+{"t_ms": 1604.433, "thread": "producer-c2", "event": "commit_end", "op": "c2", "release": "rel_e0e6299d34c1b38f", "replayed": false}
+{"t_ms": 1875.02, "thread": "producer-c1", "event": "stage_begin", "op": "c1"}
+{"t_ms": 1888.636, "thread": "producer-c1", "event": "validate_begin", "op": "c1"}
+{"t_ms": 1929.237, "thread": "producer-c1", "event": "validate_end", "op": "c1"}
+{"t_ms": 1954.673, "thread": "producer-c1", "event": "staged_finalized", "op": "c1"}
+{"t_ms": 1954.676, "thread": "producer-c1", "event": "commit_begin", "op": "c1"}
+{"t_ms": 1976.478, "thread": "producer-c1", "event": "commit_end", "op": "c1", "release": "rel_7e0bfffd22e30263", "replayed": false}
+{"t_ms": 2006.596, "thread": "producer-c2", "event": "stage_begin", "op": "c2"}
+{"t_ms": 2017.369, "thread": "producer-c2", "event": "validate_begin", "op": "c2"}
+{"t_ms": 2034.562, "thread": "producer-c2", "event": "validate_end", "op": "c2"}
+{"t_ms": 2063.425, "thread": "producer-c2", "event": "staged_finalized", "op": "c2"}
+{"t_ms": 2063.428, "thread": "producer-c2", "event": "commit_begin", "op": "c2"}
+{"t_ms": 2086.723, "thread": "producer-c2", "event": "commit_end", "op": "c2", "release": "rel_e0e6299d34c1b38f", "replayed": false}
+{"t_ms": 2540.661, "thread": "producer-c1", "event": "stage_begin", "op": "c1"}
+{"t_ms": 2552.416, "thread": "producer-c1", "event": "validate_begin", "op": "c1"}
+{"t_ms": 2584.366, "thread": "producer-c1", "event": "validate_end", "op": "c1"}
+{"t_ms": 2607.31, "thread": "producer-c1", "event": "staged_finalized", "op": "c1"}
+{"t_ms": 2607.314, "thread": "producer-c1", "event": "commit_begin", "op": "c1"}
+{"t_ms": 2673.557, "thread": "producer-c1", "event": "commit_begin", "op": "c1"}
+{"t_ms": 2690.536, "thread": "producer-c1", "event": "commit_end", "op": "c1", "release": "rel_7e0bfffd22e30263", "replayed": false}
