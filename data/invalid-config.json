@@ -1,0 +1,109 @@
+{
+  "table_snapshots": [
+    {
+      "id": "dv1",
+      "table": "devices",
+      "files": [
+        {
+          "path": "devices-v1.jsonl",
+          "bytes": 27,
+          "sha256": "788e00fe9b5203c7deecd4fbb4f0d556d690093f3ff17d42ff5186ce2da7f24f",
+          "rows": 1
+        }
+      ],
+      "rows": 1
+    },
+    {
+      "id": "dv2",
+      "table": "devices",
+      "files": [
+        {
+          "path": "devices-v2.jsonl",
+          "bytes": 27,
+          "sha256": "3942988430b4d175f3478b4d81cd9b5f15e57e9e2f9afd4849f2f09e758b1753",
+          "rows": 1
+        }
+      ],
+      "rows": 1
+    },
+    {
+      "id": "iv1",
+      "table": "inspections",
+      "files": [
+        {
+          "path": "inspections-v1.jsonl",
+          "bytes": 26,
+          "sha256": "56f6ed9b000106e07dd42c52177965b16707bbc1017624cbeb352ba9ba8057de",
+          "rows": 1
+        }
+      ],
+      "rows": 1
+    },
+    {
+      "id": "tv1",
+      "table": "trades",
+      "files": [
+        {
+          "path": "trades-v1.jsonl",
+          "bytes": 25,
+          "sha256": "16c7d0e932353e4ca70fa2692ab757fa8eb47d6bb0764ff4acef04ab8528eefb",
+          "rows": 1
+        }
+      ],
+      "rows": 1
+    },
+    {
+      "id": "tv2",
+      "table": "trades",
+      "files": [
+        {
+          "path": "trades-v2.jsonl",
+          "bytes": 25,
+          "sha256": "8dd549d61f946cb333fd63c14913836d5a6a2614b5944d512a2008112ef30cde",
+          "rows": 1
+        }
+      ],
+      "rows": 1
+    }
+  ],
+  "initial_release": {
+    "id": "r0",
+    "tables": []
+  },
+  "constraints": [
+    {
+      "from_table": "inspections",
+      "from_field": "device",
+      "to_table": "devices",
+      "to_field": "id"
+    }
+  ],
+  "candidates": [
+    {
+      "operation_id": "c1",
+      "base_release": "r0",
+      "read_set": {
+        "devices": "dv1",
+        "inspections": "iv1"
+      },
+      "write_set": {
+        "devices": "dv2"
+      }
+    },
+    {
+      "operation_id": "c2",
+      "base_release": "r0",
+      "read_set": {
+        "trades": "tv1"
+      },
+      "write_set": {
+        "trades": "tv2"
+      }
+    }
+  ],
+  "failure_points": [
+    "after_validation",
+    "before_commit",
+    "after_commit_before_reply"
+  ]
+}
